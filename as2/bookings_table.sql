@@ -1,0 +1,15 @@
+DROP TABLE IF EXISTS `bookings`;
+
+CREATE TABLE bookings (
+id int NOT NULL AUTO_INCREMENT,
+place_id VARCHAR(60) NOT NULL,
+first_name VARCHAR(60) NOT NULL,
+last_name VARCHAR(60) NOT NULL,
+email VARCHAR(60) NOT NULL,
+start_date DATETIME NOT NULL,
+duration SMALLINT NOT NULL,
+created_at DATETIME DEFAULT current_timestamp(),
+PRIMARY KEY(id),
+CONSTRAINT fk_place_id FOREIGN KEY(place_id) REFERENCES places(id)
+ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;

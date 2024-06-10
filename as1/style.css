@@ -1,0 +1,55 @@
+body {
+    background-color: #000;
+    color: #FFF;
+}
+.frame{
+  border: solid 3px green;
+  padding: 3px;
+
+  width:50%;
+  
+}
+.btn{
+  position: absolute;
+  left:85%;
+  top:1.5em;
+}
+ .listing{
+  display: flex;
+  flex-direction:column;
+  border:solid 3px lightblue;
+  margin:1em 0px;
+  padding: 0px 15px 15px;
+}
+.listing form input{
+  background-color:blue;
+  color: white;
+}
+.listing form {
+  display:flex;
+  flex-direction:column;
+}
+.noRooms{
+  border: solid 3px red;
+  text-align: center;
+}
+.noParams{
+  border: solid 3px yellow;
+}
+.results{
+  position: absolute;
+  top: 2.5em;
+}
+.bookBtn{
+  width: 70px;
+  align-self:flex-end;
+}
+.confirmation{
+  display:flex;
+  flex-direction:column;
+  width:50%;
+  align-self:center;
+}
+{
+    font-size: 1.5em;
+}
